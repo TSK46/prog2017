@@ -1,0 +1,44 @@
+問題168
+class Dice:
+ face_num = 6
+ def shoot(self):
+  return random.randint(1, self.face_num)
+face_num がアトリビュート，shoot がメソッドである。
+（メソッドの最初の引数はself とすることになっている。）
+ このさいころの実体（インスタンス）を作り，さいころを振ってみよ。
+
+import random
+aDice = Dice()
+aDice.shoot()
+
+問題169
+class Dice:
+ def __init__(self, val):
+  self.face_num = val
+
+def shoot(self):
+ return random.randint(1, self.face_num)
+
+import random
+aDice = Dice(12)
+aDice.shoot()
+
+問題170
+___________
+|  Dice   |
+
+問題171
+問題172
+問題179
+python
+
+問題180
+
+問題181
+CUI
+
+問題182
+cd/cit
+dir
+
+result.txt

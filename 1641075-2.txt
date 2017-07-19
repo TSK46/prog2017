@@ -1,0 +1,274 @@
+﻿1641075  田坂祐介
+
+問題91
+list_tohoku = [5349, 5478, 5344, 4644, 4968, 6259]
+for val in list_tohoku:
+print(val)
+5349
+5478
+5344
+4644
+4968
+6259
+
+list_tohoku = [5349, 5478, 5344, 4644, 4968, 6259]
+for y in list_tohoku:
+print(y)
+
+5349
+5478
+5344
+4644
+4968
+6259
+
+問題92
+avg_tohoku = 0.0
+for val in list_tohoku:
+avg_tohoku += val
+avg_tohoku /= len(list_tohoku)
+print(avg_tohoku)             5340.333333333333
+平均を求めることができる
+
+問題93
+2890.5
+
+問題94
+from statistics import *
+print(mean(list_shikoku))
+
+問題95
+op
+
+問題96
+dict_tohoku = {'aomori': 5349, 'akita': 4644, 'sendai': 5344,
+'Yamagata': 4968, 'fukushima': 6259, 'morioka': 5478}
+for key in dict_tohoku:
+print(key)
+
+aomori
+akita
+sendai
+Yamagata
+fukushima
+morioka
+
+問題97
+for key in dict_tohoku:
+print(dict_tohoku[key])
+
+5349
+4644
+5344
+4968
+6259
+5478
+
+問題98
+s=0
+
+for x in dict_tohoku:
+    print(dict_tohoku[x])
+    s += dict_tohoku[x]
+    
+s/len(dict_tohoku)    
+
+5340.333333333333
+
+問題99
+mean(dict_tohoku.values())　5340.333333333333
+
+問題100
+a = 5
+b = 4
+if a > b:
+    print(' 大きい')　大きい
+    
+問題101
+a = 5
+b = 7
+if a > b:
+    print(' 大きい')
+if a <= b:
+    print(' 大きくない')　大きくない
+
+問題102
+a = 5
+b = 5
+if a > b:
+    print('大きい') 
+elif a < b:
+    print('小さい')
+else:
+    print('等しい')　等しい
+    
+問題103
+while 1==1:
+     print('hello')
+     
+問題104
+import random
+random.randint(1,6)　5
+
+問題105
+import random
+rand_num = 1
+while rand_num != 4:
+    rand_num = random.randint(1,6)
+    print(rand_num)　3,2,3,2,3,4
+
+問題106
+import random
+while True:
+　　rand_num = random.randint(1,6)
+　　print(rand_num)
+　　if rand_num == 4:
+　　　　break
+　　print('.') 1,6,2,1,4
+
+問題107
+import random
+while True:
+    rand_num = random.randint(1,6)
+    print(rand_num)
+    if rand_num == 4
+        continue
+    print('.')
+4が出たらはじめに戻る
+
+問題108
+for x in range(1, 11):
+    print(x)　　　　　　　12345678910
+1~10のリストを作成する
+
+問題109
+for x in range(1, 21):
+    print(x)
+    
+問題111
+for x in range(1, 21):
+    if x %3 == 0:
+        print('Fizz')
+    print(x)
+    
+問題112
+for x in range(1, 21):
+    if x %5 == 0:
+        print('Buzz')
+    print(x)
+    
+問題113
+for x in range(1, 21):
+    if x %3 == 0:
+        if x %5 == 0:
+            print('Fizz Buzz')
+    else:
+        print(x)
+else:
+    print(x)
+    
+問題114
+for x in range(1, 21):
+    if x %3 == 0 and x %5 != 0:
+        print('Fizz')
+    if x %3 != 0 and x %5 == 0:
+        print('Buzz')
+    if x %3 == 0 and x %5 == 0:
+        print('Fizz Buzz')
+    if x %3 != 0 and x %5 != 0:
+
+問題120
+name = ' 太郎'
+age = 10
+weight = 20.567
+print(' 名前は{0}，{1}歳，体重は{2:.1f}Kg です。'.　　　　　　　　　format(name, age, weight))
+
+名前は 太郎，10歳，体重は20.6Kg です
+
+問題121
+
+問題122
+# coding:utf-8
+print(' こんにちは')
+#身長の入力
+h = input(' 身長（m）？ ')
+print(' 身長は{0}m ですね'.format(h))
+#体重の入力
+w = input(' 体重（kg）？ ')
+10
+print(' 体重は{0}kg ですね'.format(w))
+#BMI の計算
+bmi = float(w) / float(h) ** 2
+#BMI の表示
+print('BMI は{0}です'.format(bmi))
+print(' 約{0:.1f}です'.format(bmi))
+
+こんにちは
+ 身長（m）？ 1.73
+ 身長は1.73m ですね
+ 体重（kg）？ 64
+ 体重は64kg ですね
+BMI は21.383941996057334です
+ 約21.4です
+
+問題123
+
+問題124
+
+問題125
+else elif
+
+問題126
+break continue
+
+問題127
+' あ'.encode('utf-8')　b' \xe3\x81\x82'
+' あ'.encode('cp932')　b' \x82\xa0'
+16進数等に直す
+
+問題128
+
+問題168
+class Dice:
+ face_num = 6
+ def shoot(self):
+  return random.randint(1, self.face_num)
+face_num がアトリビュート，shoot がメソッドである。
+（メソッドの最初の引数はself とすることになっている。）
+ このさいころの実体（インスタンス）を作り，さいころを振ってみよ。
+
+import random
+aDice = Dice()
+aDice.shoot()
+
+問題169
+class Dice:
+ def __init__(self, val):
+  self.face_num = val
+
+def shoot(self):
+ return random.randint(1, self.face_num)
+
+import random
+aDice = Dice(12)
+aDice.shoot()
+
+問題170
+___________
+|  Dice   |
+
+問題171
+問題172
+問題179
+python
+
+問題180
+
+問題181
+CUI
+
+問題182
+cd/cit
+dir
+
+result.txt
